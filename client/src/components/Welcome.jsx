@@ -12,7 +12,7 @@ const Input = ({ name, value, type, placeholder, handleChange }) => (
 		type={type}
 		step="0.0001"
 		onChange={(e) => handleChange(e, name)}
-		className="m2y-2 w-full p-2 rounded-sm outline-none focus:border-blue-glassmorphism bg-transparent text-white border-none text-sm white-glassmorphism"
+		className="my-2 w-full p-2 rounded-sm outline-none focus:border-blue-glassmorphism bg-transparent text-white border-none text-sm white-glassmorphism"
 	/>
 )
 
@@ -66,7 +66,7 @@ const Welcome = () => {
 						<Input name="message" placeholder="Your Message" type="text" />
 						<div className="h-[1px] w-full bg-gray-400 my-2" />
 
-						{true ? <Loader /> : <button
+						{false ? <Loader /> : <button
 							type="button"
 							className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] rounded-full cursor-pointer"
 							onClick={handleSubmit}

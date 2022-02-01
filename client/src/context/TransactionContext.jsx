@@ -40,7 +40,7 @@ export const TransactionProvider = ({ children }) => {
 
 
 			if (accounts.length) {
-				setCurrentAccount(accounts[0])
+				setCurrentAccountx - (accounts[0])
 
 				//get all transactions
 			} else {

@@ -3,7 +3,7 @@ import { BsInfoCircle } from "react-icons/bs"
 import { Loader } from "./"
 import { TransactionsContext } from "../context/TransactionContext"
 import { useContext } from "react"
-
+import { shortenAddress } from "../utils/shortenAddress"
 
 const Input = ({ name, value, type, placeholder, handleChange }) => (
 	<input
@@ -57,7 +57,7 @@ const Welcome = () => {
 							</div>
 							<div>
 								<p className="text-white font-light text-sm">
-									{currentAccount}
+									{shortenAddress(currentAccount)}
 								</p>
 								<p className="text-white font-semibold text-lg mt-1" >
 									Ethereum
